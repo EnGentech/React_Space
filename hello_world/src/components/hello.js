@@ -19,7 +19,7 @@ const newHello = () => {
     return(
         React.createElement(
             "div",
-            {id: "special", class: "specialClass"},
+            {id: "special", className: "specialClass"},
             React.createElement(
                 'h4',
                 null,
