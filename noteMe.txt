@@ -1,0 +1,9 @@
+create react app is a command used to create react app with no configuration using the command
+npx create-react-app
+this will create an entire react component based services
+
+there are two methods to create-react-app. first is the approach of using npx which will download all the needed updated files for you, however, you can use npm to build this, in this approach, you install create-react-app in your machine and use this at ease. to install you run the command
+
+npm install create-react-app
+
+after the above, you can hence run create-react-app <project name> for the app to be created. meanwhile, note that if there is any changes, the installed app will have to be updated, hence the first is efficient but it is not cost friendly as this will be data demanding.
