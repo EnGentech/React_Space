@@ -7,3 +7,18 @@ there are two methods to create-react-app. first is the approach of using npx wh
 npm install create-react-app
 
 after the above, you can hence run create-react-app <project name> for the app to be created. meanwhile, note that if there is any changes, the installed app will have to be updated, hence the first is efficient but it is not cost friendly as this will be data demanding.
+
+
+React is a component based application having two types of components
+1. stateless functional component and 
+2. Statefull class component
+
+Stateless functional component
+These are simply javaScript functions, they receive properties refered to as props and returns an HTML (jsx) that describes the UI. In React the return is an extension of jsx but for simplicity, we can call it HTML for beginners point of view.
+
+In exporting, when we use the default naming convention, it allows the export to be visible irrespective of the name used but using export name will not allow that. 
+
+HOOKs is a new feature in component, this is use instead of writing class components    
+
+details in the video link below
+https://www.youtube.com/watch?v=lnV34uLEzis&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=6
