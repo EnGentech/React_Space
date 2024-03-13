@@ -6,6 +6,9 @@ import {hello as Hello, newHello as NewHello} from './components/hello';
 import Checkout from './components/propsFile';
 import Message from './components/stateFile';
 import Counter from './components/counter';
+import FunctionClick from './components/functionClick';
+import classClick from './components/classClick';
+import EventBind from './components/eventBind';
 
 function App() {
   return (
@@ -14,12 +17,16 @@ function App() {
       <Welcome />
       <Hello />
       <NewHello />*/}
-      <Checkout name="Gentle" nickName="EnGnetech">
+      {/* <Checkout name="Gentle" nickName="EnGnetech">
         <p>This is children props</p>
       </Checkout>
       <Checkout name="Blessing" nickName="Angel" /> 
 
-      <Counter />
+      <Counter /> */}
+
+      {/* <FunctionClick />
+      <ClassClick /> */}
+      <EventBind />
 
     </div>
   );
