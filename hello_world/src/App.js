@@ -10,6 +10,7 @@ import FunctionClick from './components/functionClick';
 import classClick from './components/classClick';
 import EventBind from './components/eventBind';
 import ParentComponent from './components/parentComponent';
+import ConditionalStructuring from './components/conditionalStructuring';
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
       {/* <FunctionClick />
       <ClassClick /> 
       <EventBind /> */}
-      <ParentComponent />
+      <ConditionalStructuring />
 
     </div>
   );
