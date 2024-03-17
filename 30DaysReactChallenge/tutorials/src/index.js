@@ -32,8 +32,40 @@ const address = (
   </div>
 )
 
+const header = {
+  color: "red",
+  TextDecoder: "underline",
+  backgroundColor: 'green'
+}
+
+const task2Style = {
+  color: "navy",
+  textAlign: "center"
+}
+
+const task2 = (
+  <div style={task2Style}>
+    <h1>SUBCRIBE</h1>
+    <p>Sign up with your email address to receive news and update</p>
+    <input type="text" placeholder='first Name'></input>
+    <input type="text" placeholder='last Name'></input>
+    <input type="text" placeholder='email'></input>
+  </div>
+)
+
+const submitButton = (
+  <input type="submit" placeholder='first Name'></input>
+)
+
+const appSubmit = (
+  <div style={task2Style}>
+    {task2}
+    {submitButton}
+  </div>
+)
+
 const app = (
-  <div>
+  <div style={header}>
     {names}
     {address}
   </div>
@@ -41,4 +73,4 @@ const app = (
 
 const rootElement = document.getElementById('root')
 
-ReactDOM.render(app, rootElement)
+ReactDOM.render(appSubmit, rootElement)
