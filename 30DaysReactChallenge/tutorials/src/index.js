@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
+
 // import './index.css';
 // import App from './App';
 // import reportWebVitals from './reportWebVitals';
@@ -57,6 +58,10 @@ const submitButton = (
   <input type="submit" placeholder='first Name'></input>
 )
 
+const checkCheck = (
+  <checkBox />
+)
+
 const appSubmit = (
   <div style={task2Style}>
     {task2}
@@ -64,13 +69,24 @@ const appSubmit = (
   </div>
 )
 
+function PropTest(props) {
+  return (
+    <div>
+      {props.name}
+      {props.age}
+    </div>
+
+  )
+}
+
 const app = (
-  <div style={header}>
-    {names}
-    {address}
+  <div>
+    <PropTest name="Gentle" age="32"/>
   </div>
 )
 
+
+
 const rootElement = document.getElementById('root')
 
-ReactDOM.render(appSubmit, rootElement)
+ReactDOM.render(app, rootElement)

@@ -11,6 +11,8 @@ import classClick from './components/classClick';
 import EventBind from './components/eventBind';
 import ParentComponent from './components/parentComponent';
 import ConditionalStructuring from './components/conditionalStructuring';
+import NameList from './components/nameList';
+import GetList from './components/getList';
 
 function App() {
   return (
@@ -29,7 +31,7 @@ function App() {
       {/* <FunctionClick />
       <ClassClick /> 
       <EventBind /> */}
-      <ConditionalStructuring />
+      <GetList />
 
     </div>
   );
