@@ -14,22 +14,35 @@ class Assignment3 extends Component {
     super(props);
     
     this.state = {
-      xPosition: 0,
-      yPosition: 0
+        message: "Click me",
+        xPosition: 0,
+        yPosition: 0
     };
   }
 
-  handleMouseMove = (e) => {
+  handleMouseClickMoveObject = (e) => {
     this.setState({
-      xPosition: e.clientX,
-      yPosition: e.clientY
+        xPosition: e.clientX,
+        yPosition: e.clientY
     });
+  }
+
+  handleMouseHoverMoveObject = (e) => {
+      
+    let randomNumbersX = Math.floor(Math.random() * 800)
+    let randomNumbersY = Math.floor(Math.random() * 500)
+
+    this.setState({
+        xPosition: randomNumbersX,
+        yPosition: randomNumbersY
+    })
   }
 
   render() {
     return (
-      <div style={{ position: 'relative', width: '100vw', height: '100vh' }} onClick={this.handleMouseMove}>
+      <div style={{ position: 'relative', width: '80vw', height: '80vh' }} onMouseOver={this.handleMouseHoverMoveObject}>
         <h1 style={{ ...design, left: this.state.xPosition, top: this.state.yPosition }}>30 days of React</h1>
+        <h2 onClick={this.handleMouseHoverMoveObject}>{this.state.message}</h2>
       </div>
     );
   }
