@@ -3,6 +3,7 @@ import './App.css';
 import FragmentFile from './Component/fragmentFile';
 import EventHandler from './Component/eventHandler';
 import Assignment3 from './Component/assignment3';
+import FormReact from './Component/formReact';
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
         </a>
       </header> */}
 
-      <Assignment3 />
+      <FormReact />
     </div>
   );
 }
